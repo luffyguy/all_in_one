@@ -53,7 +53,10 @@ const CloudinaryUpload = () => {
         </button>
       </form>
       {previewSource && (
+        <>
         <img src={previewSource} alt="chosen" style={{ height: "300px" }} />
+          <embed src={previewSource} style={{ height: "300px" }} type="application/pdf" />
+          </>
       )}
     </div>
   );
