@@ -3,7 +3,6 @@ import axios from "axios";
 
 const CloudinaryUpload = () => {
   const [fileInput, setFileInput] = useState("");
-  const [selectedFile, setSelectedFile] = useState("");
   const [previewSource, setPreviewSource] = useState("");
 
   const handleFileInputChange = (e) => {
@@ -54,7 +53,7 @@ const CloudinaryUpload = () => {
       </form>
       {previewSource && (
         <>
-        <img src={previewSource} alt="chosen" style={{ height: "300px" }} />
+        {/* <img src={previewSource} alt="chosen" style={{ height: "300px" }} /> */}
           <embed src={previewSource} style={{ height: "300px" }} type="application/pdf" />
           </>
       )}
